@@ -14,7 +14,7 @@ export function Header({ tasksCounter }: HeaderProps) {
 
     return (
         <View style={styles.container}>
-            <Image source={logoImg} />
+            <Text style={styles.logo}>Miner💎Tasks</Text>
 
             <View style={styles.tasks}>
                 <Text style={styles.tasksCounter}>Você tem </Text>
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         paddingTop: getStatusBarHeight(true) + 16,
         paddingHorizontal: 24,
         paddingBottom: 60,
-        backgroundColor: '#393E41',
+        backgroundColor: '#444',
         justifyContent: 'space-between',
         alignItems: 'center',
         flexDirection: 'row',
@@ -47,6 +47,11 @@ const styles = StyleSheet.create({
     },
     tasksCounterBold: {
         fontSize: 15,
+        color: '#FFF',
+        fontFamily: 'Inter-Bold',
+    },
+    logo: {
+        fontSize: 20,
         color: '#FFF',
         fontFamily: 'Inter-Bold',
     },
